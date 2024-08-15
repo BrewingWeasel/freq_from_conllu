@@ -1,0 +1,4 @@
+github.com/brewingweasel/go-conllu v0.0.0-20230823192835-4b86f9cff92d h1:43mhwnNlTib36g7qH1QqgurOTsZ8WcmOmEsfv1l9LP0=
+github.com/brewingweasel/go-conllu v0.0.0-20230823192835-4b86f9cff92d/go.mod h1:i8x1m+eL/ADyaQvan3NNrb2jQZZszLTFGS2PVq6QK8s=
+github.com/brewingweasel/go-conllu v0.0.0-20240815210637-2eb7d261ddcb h1:tmXQEe86ZH61UlKUR0mqcBz2GQmaEnoM0mHSnY+K2Lk=
+github.com/brewingweasel/go-conllu v0.0.0-20240815210637-2eb7d261ddcb/go.mod h1:i8x1m+eL/ADyaQvan3NNrb2jQZZszLTFGS2PVq6QK8s=
