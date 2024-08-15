@@ -35,7 +35,8 @@ func main() {
 	for _, sentence := range sentences {
 		for _, token := range sentence.Tokens {
 			if token.UPOS != "PUNCT" && token.UPOS != "SYM" && token.UPOS != "NUM" && token.UPOS != "X" && token.UPOS != "PROPN" {
-				frequencies[token.Lemma] = frequencies[token.Lemma] + 1
+				lemma := strings.ToLower(token.Lemma)
+				frequencies[lemma] = frequencies[lemma] + 1
 			}
 		}
 	}
@@ -51,7 +52,8 @@ func main() {
 			return cmp.Compare(b.Frequency, a.Frequency)
 		})
 
-	outputFile := filepath.Join("output", strings.TrimSuffix(path, ".conllu")+"_frequency")
+	rawPath := filepath.Base(strings.TrimSuffix(path, ".conllu"))
+	outputFile := filepath.Join("output", strings.TrimSuffix(rawPath, ".conllu")+"_frequency")
 	_ = os.Mkdir("output", os.ModePerm)
 	f, err := os.Create(outputFile)
 	if err != nil {
